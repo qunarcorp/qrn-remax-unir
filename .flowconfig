@@ -1,0 +1,11 @@
+[ignore]
+.*/exports/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

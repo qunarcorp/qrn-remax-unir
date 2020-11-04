@@ -1,0 +1,47 @@
+{
+  "name": "@qnpm/rn-remax-mirror",
+  "version": "0.2.44",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn exec babel --version && yarn babel src -d lib --extensions \".js,.ts,.tsx\" --config-file ./.babelrc.js",
+    "clean": "rm -rf lib",
+    "prepublish": "yarn clean && yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bu": "tsc --emitDeclarationOnly && babel src --out-dir lib --extensions \".ts,.tsx\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
+    "@babel/plugin-syntax-jsx": "^7.10.1",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.1",
+    "@remax/one": "^2.7.0",
+    "@remax/runtime": "^2.7.0",
+    "@remax/wechat": "^2.7.0",
+    "array-find-index": "^1.0.2",
+    "create-react-class": "^15.6.2",
+    "debounce": "^1.2.0",
+    "deep-assign": "^3.0.0",
+    "fbjs": "^1.0.0",
+    "hyphenate-style-name": "^1.0.3",
+    "inline-style-prefixer": "^5.1.0",
+    "js-cookie": "^2.2.1",
+    "normalize-css-color": "^1.0.2",
+    "prop-types": "^15.6.0",
+    "react-dom": "^16.13.1",
+    "react-timer-mixin": "^0.13.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.5.1",
+    "react-dom": ">=16.5.1"
+  },
+  "files": [
+    "package.json",
+    "index.js",
+    "config",
+    "lib",
+    "README.md"
+  ],
+  "sideEffects": false
+}
