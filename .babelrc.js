@@ -1,7 +1,3 @@
-/**
- * Created by haikuan.gu on 2020-06-24
- */
-
 module.exports = {
     "presets": [
         ['@babel/preset-env',{modules:false}],
