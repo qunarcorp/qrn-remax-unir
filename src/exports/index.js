@@ -21,6 +21,8 @@ export { default as RefreshControl } from './RefreshControl'
 
 export { default as ScrollView } from './ScrollView'
 
+export { default as SafeAreaView } from './SafeAreaView';
+
 export { default as findNodeHandle } from './findNodeHandle'
 
 export { default as UIManager } from './UIManager'
