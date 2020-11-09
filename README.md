@@ -1,4 +1,4 @@
-# rn-remax-mirror
+# qrn-remax-unir
 一个用于将React-native转换到remax组件的库，此库对于react-native中的大部分组件，进行了到remax组件的映射,很多代码也直接修改自react-native-web，方便remax再转化到mini各端，是多端开发支持mini端的核心基础组件库。
 
 ### 以下为此库支持的一些组件及api
