@@ -2,7 +2,13 @@
 
 本网站意在介绍Qunar的RN到微信小程序的核心基础组件库的内容。Qunar提供了一套从RN映射到Remax组件的基础库，用于实现RN到小程序的跨端开发。基于此库，可以基本实现只开发RN，直接展现在微信小程序上看到效果。
 
-## 组件库使用步骤：
+## 关于组件库如何使用：
+### Demo
+你可以直接下载我们准备的demo，在我们demo基础上进行开发，省略手动搭建的麻烦！
+* [demo地址](https://github.com/qunarcorp/qrn-remax-unir-demo/tree/master)
+
+你也可以尝试按照我们以下步骤，手动搭建自己的跨端项目，我们此处只是提供思路，你理解了原理以后也可以尝试把自己的RN项目按照这样的方式改造成跨端项目！
+## 搭建步骤如下
 ### 1. 初始化一个RN工程
 首先利用RN官方推荐的工具初始化一个RN工程，这里建议使用 [expo](https://docs.expo.io/)
 初始化。
@@ -24,7 +30,7 @@ npm install remax
 npm install qrn-remax-unir
 ```
 ### 4. 修改目录结构适配remax的要求
-因为expo本身和remax是没有关系的，两个框架的结合需要手动修改目录结构，调整到小程序要求的目录结构。
+因为expo本身和remax是没有关系的，两个框架的结合需要手动修改目录结构，从Remax的demo项目中复制粘贴一些文件过来，调整到小程序要求的目录结构。
 从原目录结构
 ```
 expo-demo
@@ -66,7 +72,7 @@ src/app.js
 src/app.css
 src/app.config.js
 ```
-均从remax初始化的项目中拷贝而来。
+以上文件均从remax初始化的项目中拷贝而来。
 对于/src/pages/目录的结构，也需要遵循remax的要求。
 例如:appl.config.js中，指定pages的目录
 ```
@@ -99,6 +105,5 @@ remax build -w -t wechat
 
 ---
 
-你也可以直接下载我们准备的demo，在我们demo基础上进行开发，省略手动搭建的麻烦！
-* [demo地址](https://github.com/qunarcorp/qrn-remax-unir-demo/tree/master)
+
 
